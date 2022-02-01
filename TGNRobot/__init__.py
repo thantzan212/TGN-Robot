@@ -220,7 +220,7 @@ arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsessi
 pbot = Client("robot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
-musicbot = Client(
+Client = Client(
     ZAID_SESSION,
     api_id=os.environ.get('API_ID'),
     api_hash=os.environ['API_HASH'],
