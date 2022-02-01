@@ -20,6 +20,7 @@ from TGNRobot import (
     StartTime,
     telethn,
     pbot,
+    bot,
     musicbot,
     updater,
 )
