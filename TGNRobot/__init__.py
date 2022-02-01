@@ -221,6 +221,7 @@ print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
 pbot = Client("robot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
+BOT_TOKEN = '1893968736:AAH5U0llpQEwaYkT8Iud0XT1hhhEHoayOkg'
 bot = Client('bot',
              api_id=os.environ.get('API_ID'),
              api_hash=os.environ['API_HASH'],
