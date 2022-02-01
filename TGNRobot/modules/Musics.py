@@ -1,5 +1,5 @@
 from pyrogram import filters
-from TGNRobot import pbot as bot, musicbot
+from TGNRobot import bot, musicbot
 import pytgcalls
 
 calls = pytgcalls.GroupCallFactory(musicbot).get_group_call()
