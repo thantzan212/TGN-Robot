@@ -218,7 +218,7 @@ arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsessi
 pbot = Client("robot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
-ZAID_SESSION = os.environ['PYRO_SESSION']
+ZAID_SESSION = os.environ['ZAID_SESSION']
 
 musicbot = Client(
     ZAID_SESSION,
