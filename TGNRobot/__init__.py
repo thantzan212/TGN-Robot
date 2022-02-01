@@ -14,6 +14,7 @@ from telethon.sessions import MemorySession
 from telethon.sessions import StringSession
 from motor import motor_asyncio
 from odmantic import AIOEngine
+from pyrogram import filters, Client
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 from redis import StrictRedis
@@ -219,6 +220,11 @@ print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ("https://thearq.tech", "YIECCC-NAJARO-OLLREW-SJSRIP-ARQ", aiohttpsession)
 pbot = Client("robot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
+bot = Client('bot',
+             api_id=os.environ.get('API_ID'),
+             api_hash=os.environ['API_HASH'],
+             bot_token=os.environ['BOT_TOKEN'],
+)
 
 musicbot = Client(
     ZAID_SESSION,
